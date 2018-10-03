@@ -11,9 +11,17 @@ events. The maximum resolution from the sensor configured in raw image mode is
 originally planning for, which should make interfacing with the sensor and
 handling the data much easier. 
 
+The camera sensor's UART interface operates at 3.3V CMOS logic levels, which is
+compatible with the Pi's hardware UART. The baud rate operates from 9600 to
+3686400 (3.6M) baud. 
+
+Information about the image sensor can be found at the
+[product page](https://www.4dsystems.com.au/product/uCAM_III/) and
+[datasheet](https://www.4dsystems.com.au/productpages/uCAM-III/downloads/uCAM-III_datasheet_R_1_0.pdf).
+
 ## Needs from OBC
 
-The image sensor being used on the balloon test communicates using a UART
+The image sensor being used on the balloon test communicates using a UART 
 interface. The datasheet describes the command and data protocol in depth, and a
 driver of low complexity needs to be written in the software development to make
 it easy to interface with. The images collected will be stored in the Linux
