@@ -3,10 +3,10 @@
 There are three systems on the satellite which require communication through a
 UART channel:
 
-- CRP -- requires interfacing with the [uCAM-III camera
+- CRP - requires interfacing with the [uCAM-III camera
   sensor](https://www.4dsystems.com.au/product/uCAM_III/). Configurable baud
 rate up to 3.6M baud. 
-- MDE -- requires interfacing with the UART, and COMMS.
+- MDE - requires interfacing with the UART, and COMMS.
 
 The Raspberry Pi has 2 hardware UARTs, one is the PL011, a seemingly very
 capable peripheral, which can achieve a baud rate in the range of the max
@@ -28,5 +28,4 @@ David Stockhouse, On-Board Computer Subsystem Lead
 [stockhod@my.erau.edu](mailto:stockhod@my.erau.edu)
 
 Connect on [Facebook](https://www.facebook.com/eaglesaterau/).
-
 

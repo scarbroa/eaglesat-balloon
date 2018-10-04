@@ -21,4 +21,3 @@ David Stockhouse, On-Board Computer Subsystem Lead
 
 Connect on [Facebook](https://www.facebook.com/eaglesaterau/).
 
-

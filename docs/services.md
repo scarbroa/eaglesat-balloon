@@ -48,6 +48,18 @@ The telemetry instruments are not complicated compared to many other systems
 that require interfacing. They may be read as often as their values are expected
 to change, so at cruising altitude, quite slowly. 
 
+There will be several temperature sensors distributed throughout the structure:
+- 3 - 1 for each of the EPS voltage regulators
+- 1 for the main OBC board
+- 1 for the CRP sensor board
+- 1 for the MDE TM4C board
+- 1 for the COMMS transceiver
+
+Seven temperature sensors total, and one pressure sensor, so there will be 8
+analog devices that need to be read. We intend to use the
+[MCP3008](https://www.microchip.com/wwwproducts/en/MCP3008) ADC only because we
+have some of them in house already.
+
 There is potential that the service frequency may be dynamic based on modes of
 operation at different stages in the flight. Perhaps at ascent and descent, it
 is much more critical for lots of data from the pressure and temperature sensors
@@ -70,5 +82,4 @@ David Stockhouse, On-Board Computer Subsystem Lead
 [stockhod@my.erau.edu](mailto:stockhod@my.erau.edu)
 
 Connect on [Facebook](https://www.facebook.com/eaglesaterau/).
-
 
