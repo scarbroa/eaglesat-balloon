@@ -1,7 +1,7 @@
 /*****************************************************************************
  *
  * File:
- * 	generateFilename.h
+ * 	crp_generateFilename.h
  *
  * Description:
  * 	Header file for generateFilename.c which contains preprocessor
@@ -15,17 +15,17 @@
  *
  ****************************************************************************/
 
-#ifndef GENERATE_FILENAME_H
-#define GENERATE_FILENAME_H
+#ifndef CRP_GENERATE_FILENAME_H
+#define CRP_GENERATE_FILENAME_H
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include <unistd.h>
 
-#define	FILENAME_SIZE	64
+#define	CRP_FILENAME_SIZE	64
 
-int generateFilename(char *, int, int);
+int crp_generateFilename(char *, int, int);
 
-#endif // GENERATE_FILENAME_H
+#endif // CRP_GENERATE_FILENAME_H
 

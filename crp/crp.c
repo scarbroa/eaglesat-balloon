@@ -12,10 +12,18 @@
  *	Changes: Template file created with function crp_sensorRead and
  *		crp_imageStore	
  *
+ * Revision 1.1
+ * 	Date 10/3/18
+ * 	Author: David Stockhouse
+ * 	Changes: Modified file to be composed of wrapper functions for python
+ * 		scripts rather than C functions.
+ *
  ****************************************************************************/
 
 #include "crp.h"
 #include "generateFilename.h"
+
+#include <Python.h>
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -26,6 +34,12 @@
  */
 int crp_sensorRead(char *buffer, int bufSize) {
 
+	// Initialize use of the embedded python module
+	Py_Initialize();
+
+
+	// Close out use of python
+	Py_Finalize();
 
 	return 0;
 
