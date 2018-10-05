@@ -1,7 +1,7 @@
 /*****************************************************************************
  *
  * File:
- * 	generateFilename.c
+ * 	crp_generateFilename.c
  *
  * Description:
  * 	Generates a filename for a file in which to store raw image data
@@ -14,7 +14,7 @@
  *
  ****************************************************************************/
 
-#include "generateFilename.h"
+#include "crp_generateFilename.h"
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -22,12 +22,12 @@
 #include <unistd.h>
 
 
-/**** Function generateFilename ****
+/**** Function crp_generateFilename ****
  * Generate a filename for the EagleSat 2 plugs-in test in March 2018 that 
  * matches the format "captureN-mm.dd.yyyy-hh:mm:ss.RAW" where "N" is the 
  * number index of the current capture within this process.
  */
-int generateFilename(char *buf, int bufSize, int exposure) {
+int crp_generateFilename(char *buf, int bufSize, int exposure) {
 
 	static int captureNum = 0;
 	int charsWritten;
@@ -59,9 +59,8 @@ int generateFilename(char *buf, int bufSize, int exposure) {
 	// Increment counter number
 	captureNum++;
 
-
 	// Return length of the new string
 	return charsWritten;
 
-} // Function generateFilename()
+} // Function crp_generateFilename()
 
