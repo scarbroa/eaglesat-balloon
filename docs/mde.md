@@ -19,9 +19,11 @@ MDE will send science data after each read cycle it is generated.
 
 Header: 0x808080
 
+#### Data encoding
+
 ```
-1000cccccssssooo
-    4   0
+1000rrrr rssssooo cccccccc
+    4    0 <- chip index
 ```
 
 First nybble: 0b1000
