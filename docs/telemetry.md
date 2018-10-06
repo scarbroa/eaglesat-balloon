@@ -4,7 +4,14 @@ The sensors being flown on the balloon test are used to detect pressure and
 temperature of the environment in-flight. The pressure sensor being used is a
 Honeywell SSC analog pressure sensor with a 5V power supply. The analog output
 voltage ranges from 10% to 90% the supply voltage. The temp sensor hasn't been
-determined yet.
+determined yet, but I believe it will be as simple as a thermistor voltage
+divider.
+
+We will be using the MCP3008 SPI ADC because we have some on hand. It has 8
+analog input channels, which is enough for one pressure sensor and 7
+temperature sensor distributed throughout the structure. The MCP3008 has drivers
+in the wiringPi library, it has a simple interface for reading from the analog
+channels.
 
 ## Needs from OBC
 
