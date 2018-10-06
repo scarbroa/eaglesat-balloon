@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS=-g -Wall
+CFLAGS=-g -Wall -lwiringPi
 LIBS=
 DEPS=crp.h crp_generateFilename.h
 SRCS=crp.c crp_generateFilename.c main.c
