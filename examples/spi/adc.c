@@ -4,7 +4,7 @@
  * 	adc.c
  *
  * Description:
- * 	Demonstration of reading the MCP3008 using SPI and wiringPi
+ * 	Demonstration of reading the MCP3008 ADC using SPI and wiringPi
  *
  * Revision 1.0
  * 	Date: 10/6/2018
@@ -26,7 +26,7 @@
 
 int main()
 {
-	int value, int i;
+	int value, i;
 
 	// Initialize wiringPi SPI driver
 	wiringPiSetup();
@@ -40,8 +40,7 @@ int main()
 		printf("Starting read cycle\n");
 
 		// Read all ADC channels
-		// for(i = 0; i < ADC_NUM_CHANNELS; i++) {
-		for(i = 0; i < 4; i++) {
+		for(i = 0; i < ADC_NUM_CHANNELS; i++) {
 
 			value = analogRead(ADC_CHAN | i);
 			printf("\tCH%d: %d\n", i, value);
@@ -55,3 +54,4 @@ int main()
 	// Will never reach here
 	return 0;
 }
+
