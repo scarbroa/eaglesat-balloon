@@ -16,14 +16,33 @@
  ****************************************************************************/
 
 #ifndef EAGLESAT_MDE_H
-#define EAGLESAT_MDE_H
+#define EAGLESAT_MDE_H , FIFO[1024]
 
 #include <stdio.h>
 #include <stdlib.h>
 
+#define MDE_SERIAL_DEVICE "/dev/serial1"
+
+{
 int mde_init(void);
+
+SizeFIFO
+
+while (buffSize >= 0){
 
 int mde_requestPacket(char *buffer, int bufSize);
 
+    FIFO[buffer]= UART_Char;
+    buffer++;
+    buffer & = port?; 
+    if buffer==bufSize then
+        Over = true;
+    else
+    {
+        SizeFIFO = (buffer - buffersize);
+        SizeFIFO & = port?;
+    }
+}
 #endif // EAGLESAT_MDE_H
 
+}
